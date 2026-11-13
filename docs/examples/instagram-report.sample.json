@@ -1,0 +1,667 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-11-11T10:30:00+01:00",
+  "source": "Instagram Graph API",
+  "date_range": {
+    "start_date": "2026-10-14",
+    "end_date": "2026-11-10",
+    "days": 28,
+    "label": "last_28_days",
+    "timezone": "Europe/Paris"
+  },
+  "profile": {
+    "id": "26012345678901234",
+    "username": "atelier.lune",
+    "handle": "@atelier.lune",
+    "url": "https://www.instagram.com/atelier.lune/",
+    "name": "Atelier Lune · couture & carnets",
+    "biography": "Couture, carnets et tutos du dimanche ✂️",
+    "website": "https://atelier-lune.example",
+    "followers": 8420,
+    "following": 214,
+    "posts": 131,
+    "profile_picture_url": "https://scontent-cdg4-1.cdninstagram.com/v/fake/profile.jpg"
+  },
+  "performance": {
+    "date_range": {
+      "start_date": "2026-10-14",
+      "end_date": "2026-11-10",
+      "days": 28,
+      "label": "last_28_days",
+      "timezone": "Europe/Paris"
+    },
+    "totals": {
+      "views": 180600,
+      "reach": 49335,
+      "accounts_engaged": 1386,
+      "interactions": 5461,
+      "likes": 3780,
+      "comments": 252,
+      "shares": 477,
+      "saves": 770,
+      "replies": 70,
+      "reposts": 112,
+      "profile_link_taps": 28,
+      "follows": 210,
+      "unfollows": 84,
+      "net_follows": 126
+    },
+    "engagement_rate_pct": 11.07,
+    "previous_date_range": {
+      "start_date": "2026-09-16",
+      "end_date": "2026-10-13",
+      "days": 28,
+      "label": "previous 28 days",
+      "timezone": "Europe/Paris"
+    },
+    "previous_totals": {
+      "views": 180600,
+      "reach": 49115,
+      "accounts_engaged": 1380,
+      "interactions": 5457,
+      "likes": 3780,
+      "comments": 251,
+      "shares": 473,
+      "saves": 772,
+      "replies": 70,
+      "reposts": 111,
+      "profile_link_taps": 27,
+      "follows": 210,
+      "unfollows": 83,
+      "net_follows": 127
+    },
+    "change_pct": {
+      "views": 0.0,
+      "reach": 0.4,
+      "accounts_engaged": 0.4,
+      "interactions": 0.1,
+      "likes": 0.0,
+      "comments": 0.4,
+      "shares": 0.8,
+      "saves": -0.3,
+      "replies": 0.0,
+      "reposts": 0.9,
+      "profile_link_taps": 3.7,
+      "follows": 0.0,
+      "unfollows": 1.2,
+      "net_follows": -0.8
+    },
+    "by_content_type": {
+      "reel": {
+        "views": 144480,
+        "reach": 41935,
+        "interactions": 4642,
+        "likes": 3213,
+        "comments": 215,
+        "shares": 406,
+        "saves": 655
+      },
+      "post": {
+        "views": 10836,
+        "reach": 7400,
+        "interactions": 819,
+        "likes": 567,
+        "comments": 37,
+        "shares": 71,
+        "saves": 115
+      },
+      "carousel": {
+        "views": 7224
+      },
+      "story": {
+        "views": 18060
+      }
+    },
+    "by_follower_status": {
+      "views": {
+        "followers": 63210,
+        "non_followers": 108360,
+        "unknown": 9030,
+        "followers_share_pct": 35.0
+      },
+      "reach": {
+        "followers": 17268,
+        "non_followers": 29601,
+        "unknown": 2466,
+        "followers_share_pct": 35.0
+      }
+    }
+  },
+  "audience": {
+    "gender": [
+      {
+        "code": "female",
+        "label": "Female",
+        "count": 5512,
+        "share_pct": 65.5,
+        "share_of_known_pct": 67.9
+      },
+      {
+        "code": "male",
+        "label": "Male",
+        "count": 2601,
+        "share_pct": 30.9,
+        "share_of_known_pct": 32.1
+      },
+      {
+        "code": "unknown",
+        "label": "Unknown",
+        "count": 307,
+        "share_pct": 3.6,
+        "share_of_known_pct": null
+      }
+    ],
+    "age": [
+      {
+        "age": "13-17",
+        "count": 41,
+        "share_pct": 0.5,
+        "app_share_pct": null
+      },
+      {
+        "age": "18-24",
+        "count": 903,
+        "share_pct": 10.7,
+        "app_share_pct": 11.0
+      },
+      {
+        "age": "25-34",
+        "count": 3285,
+        "share_pct": 39.0,
+        "app_share_pct": 40.0
+      },
+      {
+        "age": "35-44",
+        "count": 2104,
+        "share_pct": 25.0,
+        "app_share_pct": 25.3
+      },
+      {
+        "age": "45-54",
+        "count": 1080,
+        "share_pct": 12.8,
+        "app_share_pct": 12.6
+      },
+      {
+        "age": "55-64",
+        "count": 612,
+        "share_pct": 7.3,
+        "app_share_pct": 6.9
+      },
+      {
+        "age": "65+",
+        "count": 395,
+        "share_pct": 4.7,
+        "app_share_pct": 4.3
+      }
+    ],
+    "cities": [
+      {
+        "city": "Paris",
+        "name": "Paris, Île-de-France",
+        "count": 702,
+        "share_pct": 8.3
+      },
+      {
+        "city": "Lyon",
+        "name": "Lyon, Auvergne-Rhône-Alpes",
+        "count": 233,
+        "share_pct": 2.8
+      },
+      {
+        "city": "Nantes",
+        "name": "Nantes, Pays de la Loire",
+        "count": 151,
+        "share_pct": 1.8
+      },
+      {
+        "city": "Bordeaux",
+        "name": "Bordeaux, Nouvelle-Aquitaine",
+        "count": 140,
+        "share_pct": 1.7
+      },
+      {
+        "city": "Montréal",
+        "name": "Montréal, Quebec",
+        "count": 97,
+        "share_pct": 1.2
+      },
+      {
+        "city": "Lille",
+        "name": "Lille, Hauts-de-France",
+        "count": 95,
+        "share_pct": 1.1
+      },
+      {
+        "city": "Brussels",
+        "name": "Brussels, Brussels Region",
+        "count": 88,
+        "share_pct": 1.0
+      }
+    ],
+    "countries": [
+      {
+        "country": "FR",
+        "count": 6870,
+        "share_pct": 81.6
+      },
+      {
+        "country": "BE",
+        "count": 402,
+        "share_pct": 4.8
+      },
+      {
+        "country": "CA",
+        "count": 318,
+        "share_pct": 3.8
+      },
+      {
+        "country": "CH",
+        "count": 221,
+        "share_pct": 2.6
+      },
+      {
+        "country": "MA",
+        "count": 96,
+        "share_pct": 1.1
+      },
+      {
+        "country": "LU",
+        "count": 54,
+        "share_pct": 0.6
+      },
+      {
+        "country": "US",
+        "count": 41,
+        "share_pct": 0.5
+      }
+    ]
+  },
+  "posts": [
+    {
+      "id": "17900000000000001",
+      "type": "carousel",
+      "published_at": "2026-11-09T10:00:00+01:00",
+      "caption": "Post 2 : Mes carnets du mois, page par page 📒 Lequel est ton préféré ?",
+      "permalink": "https://www.instagram.com/p/FAKE0001/",
+      "shortcode": "FAKE0001",
+      "likes": 75,
+      "comments": 3,
+      "comments_enabled": true,
+      "shared_to_feed": null,
+      "views": 3037,
+      "reach": 2125,
+      "shares": 10,
+      "saves": 15,
+      "interactions": 103,
+      "reposts": 1,
+      "follows": 4,
+      "profile_visits": 21,
+      "profile_activity": 10,
+      "engagement_rate_pct": 4.85,
+      "thumbnail": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAADwCACdASpaAKAAPrVaqVCnJSOioIgA4BaJZ27f8AXTS5O/wAPtKORS00E09Gq3/4caCuP5yF+iE/2RHghiza31FRboyzkUvCddElrJJp6FwAD+5uqX/pjvNyhnX/jHm7q7gpvaTY/fMJx0gzMPZ1JgVxgNWVyC1BeROyzmZ2+RIZPCelBayqxyUwhZGvptAyjBltaew/aHiHwiBPbi0pJ7DsretK+AtZSrjDErOYXBmGQ2/0WrbPyKTBMIKoYofMNaOu5BWQcznwPpglse7lKgTne3qakAAAA="
+    },
+    {
+      "id": "17900000000000040",
+      "type": "reel",
+      "published_at": "2026-11-09T18:00:00+01:00",
+      "caption": "Post 41 : un tuto couture en 60 secondes ✂️ Enregistre-le pour plus tard, et dis-moi en commentaire ce que tu veux voir la semaine prochaine !",
+      "permalink": "https://www.instagram.com/reel/FAKE0040/",
+      "shortcode": "FAKE0040",
+      "likes": 203,
+      "comments": 9,
+      "comments_enabled": true,
+      "shared_to_feed": true,
+      "views": 8146,
+      "reach": 5702,
+      "shares": 27,
+      "saves": 40,
+      "interactions": 279,
+      "reposts": 4,
+      "skip_rate_pct": 45,
+      "avg_watch_time_s": 14.0,
+      "total_watch_time_h": 20.4,
+      "engagement_rate_pct": 4.89,
+      "thumbnail": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAACwCgCdASpaAKAAPrVap08nJSOiI924AOAWiWVu3/AF27ijjojDqAW/+AcgHAhynni1wIbgfCK7x5QjVW7GflJMkM6EOV1lCNVbsZ+UkyFwDejoM+kAd9BvELGkIp/AAP7Wln+Fzlkf+C9lMMOQta0mCmzEgDyIjUrKPssHmAF3/CfyB82UUTqf7fv3MrEjuq5BcAC87G/R7Y5ls1Ny4DFFzwGMbVSSDRswA35GwgVcIH8+zkQPqp0vns6BwB5Swh0EsaxAAGl0lBktckKKGAW56kQDFybyCHq3B10MqaypxGNyPpH9JKqIGu7/6SVUf2tRfxfgAKqAAA=="
+    },
+    {
+      "id": "17900000000000002",
+      "type": "reel",
+      "published_at": "2026-11-07T10:00:00+01:00",
+      "caption": "Post 3 : un tuto couture en 60 secondes ✂️ Enregistre-le pour plus tard, et dis-moi en commentaire ce que tu veux voir la semaine prochaine !",
+      "permalink": "https://www.instagram.com/reel/FAKE0002/",
+      "shortcode": "FAKE0002",
+      "likes": 335,
+      "comments": 14,
+      "comments_enabled": true,
+      "shared_to_feed": true,
+      "views": 13407,
+      "reach": 9384,
+      "shares": 44,
+      "saves": 67,
+      "interactions": 460,
+      "reposts": 6,
+      "skip_rate_pct": 32,
+      "avg_watch_time_s": 13.0,
+      "total_watch_time_h": 33.5,
+      "engagement_rate_pct": 4.9,
+      "thumbnail": "data:image/webp;base64,UklGRgABAABXRUJQVlA4IPQAAACQCgCdASpaAKAAPrVYp08nJSOiI924AOAWiWVu3/AF3WjreKjDqAW/+AdyKIhynr2LvRrfLTbg0KOgu8eUI1Vuxn5STJDOhDlPPFrgQ3bkWHw87z2uKqMw9cPX1AAA/s8l/x7bnx/zNwNnIh2iQnRunzTStjZ1/VlscHgN6rZT9TNxy2liNrseOuHeRWVLseS7W+KDZ28PBO4Dy11H1RdJRIkmdk91j0L2xs7Q0FgkY2D6vva9jGdIkCXOLM6sO2T5sbNUgaNBg1EvcjixMXADcGMFgjNuy3J/qOUCdjvj+OnCmBhOOnCmf8wprvz8cS7SgAAA"
+    },
+    {
+      "id": "17900000000000003",
+      "type": "image",
+      "published_at": "2026-11-05T10:00:00+01:00",
+      "caption": "Post 4 : Nouvelle collection en vue… #couture #faitmain",
+      "permalink": "https://www.instagram.com/p/FAKE0003/",
+      "shortcode": "FAKE0003",
+      "likes": 40,
+      "comments": 1,
+      "comments_enabled": true,
+      "shared_to_feed": null,
+      "views": 1611,
+      "reach": 1127,
+      "shares": 5,
+      "saves": 8,
+      "interactions": 54,
+      "reposts": 0,
+      "follows": 6,
+      "profile_visits": 23,
+      "profile_activity": 12,
+      "engagement_rate_pct": 4.79,
+      "thumbnail": "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAAAQCwCdASqAAKAAPrVaqVCnJSOioGgA4BaJZ27hdRcGIwm/x+wA+iBiDlm15+IOWchif9JVdp1Urfz8T+p6t5//S/vsxVXadfza8/EHLOQxMQcs5FPaSSz0lVvFNPSVXZHAAP78Qqn+8juC5PNn/N32+87NKHXr7FGTRQ8weQnIgHxjhUVzpJsum0829TACxu8Jhge8bx8LiSqO7lduQ2bq5b5+MX3d3Wu1kWK5gZtCI5k1Sj0/fLIXjhW1soDDDaGOp0tzyBWVaknWiemWMTJ8IZDk6eAJIbbM/4fvu90BlpM8ZBQcLYMh0jq0GRQA"
+    },
+    {
+      "id": "17900000000000004",
+      "type": "reel",
+      "published_at": "2026-11-03T10:00:00+01:00",
+      "caption": "Post 5 : un tuto couture en 60 secondes ✂️ Enregistre-le pour plus tard, et dis-moi en commentaire ce que tu veux voir la semaine prochaine !",
+      "permalink": "https://www.instagram.com/reel/FAKE0004/",
+      "shortcode": "FAKE0004",
+      "likes": 203,
+      "comments": 9,
+      "comments_enabled": true,
+      "shared_to_feed": true,
+      "views": 8148,
+      "reach": 5703,
+      "shares": 27,
+      "saves": 40,
+      "interactions": 279,
+      "reposts": 4,
+      "skip_rate_pct": 34,
+      "avg_watch_time_s": 14.0,
+      "total_watch_time_h": 20.4,
+      "engagement_rate_pct": 4.89,
+      "thumbnail": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAACwCgCdASpaAKAAPrVap08nJSOiI924AOAWiWVu3/AF27ijjojDqAW/+AcgHAhynni1wIbgfCK7x5QjVW7GflJMkM6EOV1lCNVbsZ+UkyFwDejoM+kAd9BvELGkIp/AAP7Wln+Fzlkf+C9lMMOQta0mCmzEgDyIjUrKPssHmAF3/CfyB82UUTqf7fv3MrEjuq5BcAC87G/R7Y5ls1Ny4DFFzwGMbVSSDRswA35GwgVcIH8+zkQPqp0vns6BwB5Swh0EsaxAAGl0lBktckKKGAW56kQDFybyCHq3B10MqaypxGNyPpH9JKqIGu7/6SVUf2tRfxfgAKqAAA=="
+    },
+    {
+      "id": "17900000000000005",
+      "type": "carousel",
+      "published_at": "2026-11-01T10:00:00+01:00",
+      "caption": "Post 6 : Mes carnets du mois, page par page 📒 Lequel est ton préféré ?",
+      "permalink": "https://www.instagram.com/p/FAKE0005/",
+      "shortcode": "FAKE0005",
+      "likes": 29,
+      "comments": 1,
+      "comments_enabled": true,
+      "shared_to_feed": null,
+      "views": 1185,
+      "reach": 829,
+      "shares": 3,
+      "saves": 5,
+      "interactions": 38,
+      "reposts": 0,
+      "follows": 3,
+      "profile_visits": 25,
+      "profile_activity": 10,
+      "engagement_rate_pct": 4.58,
+      "thumbnail": "data:image/webp;base64,UklGRiQBAABXRUJQVlA4IBgBAABwDACdASqAAKAAPrVap08nJSOiI744AOAWiWVu4XPwTgH6N+tIL/vrYD1zCLTbhFWDwwMUQ5L8nptwi0hsqUZMfWtGUjstjcPiHKuRCVNuEWm3B+CKcs7FNxjTptwi0wOXejnrvHfBLTbhE0AA/v3aN9i/NMwSOLYwA2A/dSTbQqSgmSGC2IULQrFM5eVmIDxTKeiQ6K5bb0k9LVoP5fB4LwGjozxXc1eidMneBt/QTeff2SVUedCeHf0kqdmbKUrBk/lbypvby5Vorui7zfxiUzniQR6LURmLGX8f0vtm1JiiowI7Tc89PpIaACg3JOTcQBXKvynWTGLMbHerxOfNfapQoyRQDJ/TBsbohCFwrAI/orhnTgAA"
+    },
+    {
+      "id": "17900000000000006",
+      "type": "reel",
+      "published_at": "2026-10-30T10:00:00+01:00",
+      "caption": "Post 7 : un tuto couture en 60 secondes ✂️ Enregistre-le pour plus tard, et dis-moi en commentaire ce que tu veux voir la semaine prochaine !",
+      "permalink": "https://www.instagram.com/reel/FAKE0006/",
+      "shortcode": "FAKE0006",
+      "likes": 148,
+      "comments": 6,
+      "comments_enabled": true,
+      "shared_to_feed": true,
+      "views": 5936,
+      "reach": 4155,
+      "shares": 19,
+      "saves": 29,
+      "interactions": 202,
+      "reposts": 2,
+      "skip_rate_pct": 36,
+      "avg_watch_time_s": 15.0,
+      "total_watch_time_h": 14.8,
+      "engagement_rate_pct": 4.86,
+      "thumbnail": "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAAAwCgCdASpaAKAAPrVap08nJSOiI924AOAWiWVu3/AF7JjHemjhO9gT7pqrgOFYvoASHPSWm2Mh70c/Q0k24NCjoLvHlCNVbsZ+UkyP1zkWwg7BW9NcPX4CJOAA/tlIC19sAh0/5q4KzqQDOwX4U1Gnvi2izTn1hOoaiqKfM08UOU9jG+b7gUKwKjF1wVozwo+vzsLa0F+yLAFH0SKy0HScwE4AgXUJ/CAuNtJibvOSSfJjDQgD43kjXAuUPEUkwyo1FB2nTFLzVnL0Td5yhTCSuVSJ7J/10T7EwWpPU/ifgwuvwYfpvWOon4AAAAAA"
+    },
+    {
+      "id": "17900000000000007",
+      "type": "image",
+      "published_at": "2026-10-28T10:00:00+01:00",
+      "caption": "Post 8 : Nouvelle collection en vue… #couture #faitmain",
+      "permalink": "https://www.instagram.com/p/FAKE0007/",
+      "shortcode": "FAKE0007",
+      "likes": 156,
+      "comments": 6,
+      "comments_enabled": true,
+      "shared_to_feed": null,
+      "views": 6259,
+      "reach": 4381,
+      "shares": 20,
+      "saves": 31,
+      "interactions": 213,
+      "reposts": 3,
+      "follows": 5,
+      "profile_visits": 27,
+      "profile_activity": 12,
+      "engagement_rate_pct": 4.86,
+      "thumbnail": "data:image/webp;base64,UklGRiABAABXRUJQVlA4IBQBAACwCwCdASqAAKAAPrVaqVAnJSOioGgA4BaJZ27fg/3P7S/tX8IcH+X5A+gDvsu05+BMdiSq7TkeJKrtOfQ+D3iN5cP8EHLORT1zWh0jR7OepUPHykX5EmnpKbqUcimsxufUHNx/MeAA/syK/+THXlmqs/5u+33naG5qCMQADxu5GVnBaOpq8lM6uBLPT2ZNLcOF5eR4Y7hHvvdeEl764VnDy1UP1xd+yMLi9/MUAAAWRuuZqmcQor7JzuFuGvrQEIV/FGO/95kIs+jvM+xliYNA4VR8rW0LkRu4s36E3i3cZytAAt1PEM9u8A0pDyneaw0nqdE6YsjemecXF+Qt0zbPAbEd/uRsaN/Lz2u8UTEUYRgAAAA="
+    },
+    {
+      "id": "17900000000000008",
+      "type": "reel",
+      "published_at": "2026-10-26T10:00:00+01:00",
+      "caption": "Post 9 : un tuto couture en 60 secondes ✂️ Enregistre-le pour plus tard, et dis-moi en commentaire ce que tu veux voir la semaine prochaine !",
+      "permalink": "https://www.instagram.com/reel/FAKE0008/",
+      "shortcode": "FAKE0008",
+      "likes": 507,
+      "comments": 22,
+      "comments_enabled": true,
+      "shared_to_feed": true,
+      "views": 20296,
+      "reach": 14207,
+      "shares": 67,
+      "saves": 101,
+      "interactions": 697,
+      "reposts": 10,
+      "skip_rate_pct": 38,
+      "avg_watch_time_s": 16.0,
+      "total_watch_time_h": 50.7,
+      "engagement_rate_pct": 4.91,
+      "thumbnail": "data:image/webp;base64,UklGRvwAAABXRUJQVlA4IPAAAADwCQCdASpaAKAAPrVapk8nJSOiI8go4BaJY27f8AXzWge96L/AJ1iHrvY0mRYfOrlJSaLZ+Wo3aMEtVw1a/hEgYaLD8rV0mX5ODxRhWIyQoWE4vqQ/l/ngAP7bmK8vK/c/81cdrL1WuWAC4Tb3mOTKT4PJsolnj/d9CGWqcSIetDhfGHzD/uZzL8c/PM/0BQ9aFb5m6KX8RD7R+ruhqQABeHdAA5l+myQ2GSFj0px85nWoPsi1nCy0AF2mNGyZe0pxI2ogBAtHHeZjj4mITfTrfn390lU2p/n390lUftqwyDmBBsrezC2X7sBJlIw8AAA="
+    },
+    {
+      "id": "17900000000000009",
+      "type": "carousel",
+      "published_at": "2026-10-24T11:00:00+02:00",
+      "caption": "Post 10 : Mes carnets du mois, page par page 📒 Lequel est ton préféré ?",
+      "permalink": "https://www.instagram.com/p/FAKE0009/",
+      "shortcode": "FAKE0009",
+      "likes": 58,
+      "comments": 2,
+      "comments_enabled": true,
+      "shared_to_feed": null,
+      "views": 2333,
+      "reach": 1633,
+      "shares": 7,
+      "saves": 11,
+      "interactions": 78,
+      "reposts": 1,
+      "follows": 7,
+      "profile_visits": 29,
+      "profile_activity": 10,
+      "engagement_rate_pct": 4.78,
+      "thumbnail": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAABwCACdASpaAKAAPrVaqVCnJSOioIgA4BaJZ27dXNMfsAU0qjjP2P6CGjxSq7QA8JrMiPBDFm5dXac+pNZlv5eSazLcbpKrtAYgmswIAP7h5hf9ZPh53ALT/vL3O8laUaHyLsqUD1Jq7TB2Hf/vJ9qvah48Wp1E53LE00VSb+3B6ldWLvACmMY+MNhtEFAylmnooRThnk6Z3JjQAHJ6D3IyLVA3P6pSWG1CRFHgS9dxyAT7qPyxM5aO9JwiMT2cNXj4V8HvvGBz6EfQAAA="
+    },
+    {
+      "id": "17900000000000010",
+      "type": "reel",
+      "published_at": "2026-10-22T11:00:00+02:00",
+      "caption": "Post 11 : un tuto couture en 60 secondes ✂️ Enregistre-le pour plus tard, et dis-moi en commentaire ce que tu veux voir la semaine prochaine !",
+      "permalink": "https://www.instagram.com/reel/FAKE0010/",
+      "shortcode": "FAKE0010",
+      "likes": 259,
+      "comments": 11,
+      "comments_enabled": true,
+      "shared_to_feed": true,
+      "views": 10370,
+      "reach": 7258,
+      "shares": 34,
+      "saves": 51,
+      "interactions": 355,
+      "reposts": 5,
+      "skip_rate_pct": 40,
+      "avg_watch_time_s": 12.5,
+      "total_watch_time_h": 25.9,
+      "engagement_rate_pct": 4.89,
+      "thumbnail": "data:image/webp;base64,UklGRvgAAABXRUJQVlA4IOwAAADQCgCdASpaAKAAPrVap08nJSOiI924AOAWiWVu3/AF8afvdEjfqAW/++uAPMDL8pHcDYu9GmektNssXo6C4DQ96Of1CbcIzY0F3o1vlptwX2lJabTP+iG1aoltBiG7kgD+zyX/bJNs3/bfHadIseoCZTpkdLEOqwxV+qCpp5ZNHqgiiF1lSCuhsPG1GbSo5DyDqn5alrqOmniJmAVFPuIAwL8GuXkP+g2dA5qXEVEhg8mnel6Kb0Xr3pPjZ3T7cvPnSe+cb8RdsfjW/rqYHrZr+O91fx4FUEX5HH2MKLkcfZn/E2NrxXKqCaEAAA=="
+    },
+    {
+      "id": "17900000000000011",
+      "type": "image",
+      "published_at": "2026-10-20T11:00:00+02:00",
+      "caption": "Post 12 : Nouvelle collection en vue… #couture #faitmain",
+      "permalink": "https://www.instagram.com/p/FAKE0011/",
+      "shortcode": "FAKE0011",
+      "likes": 40,
+      "comments": 1,
+      "comments_enabled": true,
+      "shared_to_feed": null,
+      "views": 1607,
+      "reach": 1124,
+      "shares": 5,
+      "saves": 8,
+      "interactions": 54,
+      "reposts": 0,
+      "follows": 4,
+      "profile_visits": 20,
+      "profile_activity": 12,
+      "engagement_rate_pct": 4.8,
+      "thumbnail": "data:image/webp;base64,UklGRgABAABXRUJQVlA4IPQAAADQCgCdASqAAKAAPrVaqVCnJSOioGgA4BaJZ27hdKBkw/y+wA75jFJNOkqrfz8QZ+x/PxBypm8/EHLOH0XZb+fh7qw28/EGgrfz8QcqZvPxByza8/EHL//9q/6CSq7I4AD+/H55/vI7guTzZ/zd9vvOzseEoy5yv4Aw3C7PvBsJ5A0Ii/UHfPTWdPku8s3JoZss2bJZsKf1Q4f8hTYdsHu08Vu7Pgg1dJk7SLJKuTXqMcwU5c6TabctdZqq0mgjWu2HTamMwsbq5F0t+E6BOZg8HbG6QU5zTCZvufbaabTTaacLZjki3CSvXpA59K6DuTIWacAA"
+    },
+    {
+      "id": "17900000000000012",
+      "type": "reel",
+      "published_at": "2026-10-18T11:00:00+02:00",
+      "caption": "Post 13 : un tuto couture en 60 secondes ✂️ Enregistre-le pour plus tard, et dis-moi en commentaire ce que tu veux voir la semaine prochaine !",
+      "permalink": "https://www.instagram.com/reel/FAKE0012/",
+      "shortcode": "FAKE0012",
+      "likes": 177,
+      "comments": 7,
+      "comments_enabled": true,
+      "shared_to_feed": true,
+      "views": 7110,
+      "reach": 4977,
+      "shares": 23,
+      "saves": 35,
+      "interactions": 242,
+      "reposts": 3,
+      "skip_rate_pct": 42,
+      "avg_watch_time_s": 13.5,
+      "total_watch_time_h": 17.8,
+      "engagement_rate_pct": 4.86,
+      "thumbnail": "data:image/webp;base64,UklGRggBAABXRUJQVlA4IPwAAADwCgCdASpaAKAAPrVap08nJSOiI924AOAWiWVu3/AVYDRzRj1P5aSsOoAAV4MtNuDQo6C7x11u9XR36vykfbVciG7IT/lpgd/kpMkLWCPV+ThworkJnus3DEbuiy64dwAA/s8JfhWW5f8zcb7I/TPstrk5nBOOQs4RYpGIPcbFRhdXv4qMKrVnGRlN2qbfRwuH54kXhszGAAAQxqfzZn6nGvr5ZoYDtOhQzMW0sf8I/e6ZkcAqYfSgQ8Bkrr9sDBfWTYzCnJfmzcEqVEXrGlHJleMtZAsBpX5vtD6emgtO8byGIr21S3ZM/g2ex5M/g3/poYEBvAOP0qCAAAA="
+    },
+    {
+      "id": "17900000000000013",
+      "type": "carousel",
+      "published_at": "2026-10-16T11:00:00+02:00",
+      "caption": "Post 14 : Mes carnets du mois, page par page 📒 Lequel est ton préféré ?",
+      "permalink": "https://www.instagram.com/p/FAKE0013/",
+      "shortcode": "FAKE0013",
+      "likes": 33,
+      "comments": 1,
+      "comments_enabled": true,
+      "shared_to_feed": null,
+      "views": 1338,
+      "reach": 936,
+      "shares": 4,
+      "saves": 6,
+      "interactions": 44,
+      "reposts": 0,
+      "follows": 6,
+      "profile_visits": 22,
+      "profile_activity": 10,
+      "engagement_rate_pct": 4.7,
+      "thumbnail": "data:image/webp;base64,UklGRhYBAABXRUJQVlA4IAoBAADQDACdASqAAKAAPrVap08nJSOiI744AOAWiWVu4XJWAR8qkBc/tK0AsuILez7SVyIcq4Pd70c9d474JabcIm21nJVsaR2WxpHZePgX5STL5nG4RabcH4IpyzsU3jEmX5STJDORDlXIdPkpMvykOwAA/vzTSJku+0zawe0U528gbTL8tOaavsRZ76krobFbuW18aSWeUW8ofIluBHklgTAuPsSE59wPtde/38HG6sm7Jn8HG2rwcnQbylVkQ3p9V9HczLIXTxnIoAMhr3jVc7WbSkRg585v9e/J79o1XrTAlCMTm0oKgOPcmC5ID457sUZMp77eZuoAaoQsRw5z/mo0itv9LaW3+IAAAA=="
+    },
+    {
+      "id": "17900000000000014",
+      "type": "reel",
+      "published_at": "2026-10-14T11:00:00+02:00",
+      "caption": "Post 15 : un tuto couture en 60 secondes ✂️ Enregistre-le pour plus tard, et dis-moi en commentaire ce que tu veux voir la semaine prochaine !",
+      "permalink": "https://www.instagram.com/reel/FAKE0014/",
+      "shortcode": "FAKE0014",
+      "likes": 1012,
+      "comments": 45,
+      "comments_enabled": true,
+      "shared_to_feed": true,
+      "views": 40518,
+      "reach": 28362,
+      "shares": 135,
+      "saves": 202,
+      "interactions": 1394,
+      "reposts": 20,
+      "skip_rate_pct": 44,
+      "avg_watch_time_s": 14.5,
+      "total_watch_time_h": 101.3,
+      "engagement_rate_pct": 4.92,
+      "thumbnail": "data:image/webp;base64,UklGRgABAABXRUJQVlA4IPQAAAAQCgCdASpaAKAAPrVap08nJSOiI924AOAWiWVu3/AFySnVhOjAAkA1twjNY4XejW+Wm3Bni9Bd48v9Z0HT5KTL6MxTlnTVflJMkM6EOUKRzKYwPYU+FE7pAAD+1pZ/a0RkP+ZuN9kljt94OtjPOtQFQVcmX0jOcWpalupCfyVtofNlFaMHMcXyrFgKsVTHlEtKeYSrhKKnJOP93u626kU5BGmCAj2xXhkIACor8SfBuwUGRfNBIQmIWA4kkDSuMgSgdZs+U31R68+njTxzDm7gW2ecIg4R1Wt3Zdg3n8CbtCpmtKCU5UzX9rUE8D7Okq4tqNgA"
+    }
+  ],
+  "best_hours": {
+    "best_hours": [
+      21,
+      20,
+      22
+    ],
+    "best_slots": [
+      {
+        "weekday": "wednesday",
+        "hour": 21,
+        "avg_online": 1822
+      },
+      {
+        "weekday": "thursday",
+        "hour": 21,
+        "avg_online": 1822
+      },
+      {
+        "weekday": "friday",
+        "hour": 21,
+        "avg_online": 1822
+      },
+      {
+        "weekday": "saturday",
+        "hour": 21,
+        "avg_online": 1822
+      },
+      {
+        "weekday": "sunday",
+        "hour": 21,
+        "avg_online": 1822
+      }
+    ],
+    "timezone": "Europe/Paris"
+  },
+  "unavailable": {},
+  "notes": [
+    "Meta's numbers can still change for up to 48 hours. follows/unfollows come from Meta's follows_and_unfollows metric (unfollows include accounts that left Instagram).",
+    "Post metrics are lifetime totals for the posts published in date_range. Audience is the followers' current demographics."
+  ]
+}

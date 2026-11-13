@@ -27,4 +27,5 @@ tokens/
 .env
 .env.*
 instagram-report*.json
+!docs/examples/instagram-report.sample.json
 *.export.json
