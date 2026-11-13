@@ -1,0 +1,46 @@
+name: Bug report
+description: Something doesn't work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please **never paste tokens, app secrets or private account data**
+        (follower numbers, captions, account IDs). Running `instagram-mcp check` and pasting the
+        failing lines, with personal values replaced by `…`, is very helpful.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the tool or command, its arguments and the error message.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: dropdown
+    id: login
+    attributes:
+      label: Meta app setup
+      options:
+        - API setup with unified login (token starts with EAA)
+        - API setup with Instagram login (token starts with IG)
+        - API setup with Facebook login
+        - Not sure
+  - type: textarea
+    id: check
+    attributes:
+      label: Output of `instagram-mcp check` (failing lines only, personal values removed)
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Version (`instagram-mcp --version`)
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: MCP client and OS
+      placeholder: ChatGPT desktop on macOS 26
