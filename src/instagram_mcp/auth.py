@@ -24,6 +24,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import secrets
 import sys
 import threading
@@ -221,6 +222,40 @@ def meta_error(response: httpx.Response) -> dict[str, Any]:
             "code": payload.get("code"),
         }
     return {}
+
+
+# Query parameters that carry secrets in Graph API and OAuth URLs.
+_SECRET_PARAMS = re.compile(r"\b((?:access_token|input_token|client_secret|fb_exchange_token)=)[^&\s\"'>]+")
+
+
+class RedactSecretsFilter(logging.Filter):
+    """Masks tokens in HTTP log lines.
+
+    httpx logs every request URL at INFO level, and Graph API URLs carry the access token. The
+    CLI keeps those loggers at WARNING, but a program that embeds the server (or a debugging
+    session) may configure logging differently, so the records themselves are cleaned too.
+    """
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        try:
+            message = record.getMessage()
+        except (TypeError, ValueError):
+            return True
+        cleaned = _SECRET_PARAMS.sub(r"\1[redacted]", message)
+        if cleaned != message:
+            record.msg, record.args = cleaned, None
+        return True
+
+
+def install_log_redaction() -> None:
+    """Attach :class:`RedactSecretsFilter` to the HTTP client loggers (idempotent)."""
+    for name in ("httpx", "httpcore"):
+        http_logger = logging.getLogger(name)
+        if not any(isinstance(f, RedactSecretsFilter) for f in http_logger.filters):
+            http_logger.addFilter(RedactSecretsFilter())
+
+
+install_log_redaction()
 
 
 def redact(text: str, secrets: tuple[str, ...]) -> str:

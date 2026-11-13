@@ -111,9 +111,10 @@ calls every tool against your own account if you want to verify them again.
     to them, so their expiry is recorded as unknown unless the configuration says "never".
 20. **No sign-in tool.** Signing in means handling a secret token, which must not travel through a
     chat, so it only happens in a terminal (`instagram-mcp auth`).
-21. **Secrets stay out of logs and messages.** Tokens are redacted from Meta's error messages,
-    httpx request logging is forced to WARNING (Graph URLs carry the token), and pagination uses
-    cursors.
+21. **Secrets stay out of logs and messages.** Tokens are redacted from Meta's error messages;
+    a logging filter on httpx masks `access_token` (and other secret parameters) in every request
+    line, whatever the host program's logging setup, and the CLI also keeps httpx at WARNING; and
+    pagination uses cursors rather than Meta's `next` URLs.
 22. **`--oauth`** (Instagram Login apps only) uses a paste-back redirect (`https://localhost/`) and
     reads the app secret from the environment or a hidden prompt, never storing it.
 

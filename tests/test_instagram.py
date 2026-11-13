@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import logging
 from collections.abc import Callable
 from datetime import UTC, datetime, timedelta
 
@@ -211,3 +212,35 @@ def test_unified_login_errors_name_the_facebook_permissions(settings: Settings) 
     without_account = unified_client(settings, lambda _r: httpx.Response(200, json={}), user_id=None)
     with pytest.raises(AuthError, match="which Instagram account"):
         without_account.get("me")
+
+
+def test_http_logs_never_contain_the_token(settings: Settings, caplog: pytest.LogCaptureFixture) -> None:
+    """Even when the host program logs httpx at DEBUG (the CLI keeps it at WARNING), the access
+    token in Graph URLs is masked before any handler sees the record."""
+    api = client(settings, lambda request: httpx.Response(200, json={"id": "1"}))
+    with caplog.at_level(logging.DEBUG, logger="httpx"), caplog.at_level(logging.DEBUG):
+        api.get("me", {"fields": "username"})
+    logged = "\n".join(record.getMessage() for record in caplog.records)
+    assert "HTTP Request: GET" in logged  # the line is still logged...
+    assert TOKEN not in logged and "access_token=[redacted]" in logged  # ...without the token
+    assert TOKEN not in caplog.text
+
+
+def test_redaction_filter_masks_every_secret_parameter() -> None:
+    from instagram_mcp.auth import RedactSecretsFilter
+
+    record = logging.LogRecord(
+        "httpx",
+        logging.INFO,
+        __file__,
+        1,
+        'GET %s "HTTP/1.1 200 OK"',
+        (
+            "https://x/oauth?client_secret=abc&fb_exchange_token=EAAx1&input_token=IG9&fields=a&access_token=EAA2",
+        ),
+        None,
+    )
+    assert RedactSecretsFilter().filter(record)
+    message = record.getMessage()
+    assert "abc" not in message and "EAAx1" not in message and "IG9" not in message and "EAA2" not in message
+    assert "fields=a" in message

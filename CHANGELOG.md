@@ -6,6 +6,15 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-13
+
+### Security
+
+- Access tokens are now masked in HTTP log lines (`access_token`, `input_token`,
+  `client_secret`, `fb_exchange_token`) whatever the host program's logging configuration. Before,
+  only the `instagram-mcp` command kept those log lines off; a program that loaded the server
+  itself and logged httpx at INFO or DEBUG level could print the token.
+
 ## [0.1.0] - 2026-11-13
 
 First public version.
@@ -35,5 +44,6 @@ First public version.
 - A rule-checking fake of the Graph API that mirrors the behaviour observed on a real account,
   generated tool docs and report sample, both checked by tests.
 
-[Unreleased]: https://github.com/nelsonrogers/instagram-mcp/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/nelsonrogers/instagram-mcp/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/nelsonrogers/instagram-mcp/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/nelsonrogers/instagram-mcp/releases/tag/v0.1.0

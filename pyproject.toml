@@ -1,6 +1,6 @@
 [project]
 name = "instagram-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Local, read-only MCP server that gives your AI assistant your Instagram Insights: performance, trends, audience, posts, reels, stories and comments."
 readme = "README.md"
 license = "MIT"
